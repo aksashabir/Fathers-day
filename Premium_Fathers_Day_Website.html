@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Father's Day ❤️</title>
+<style>
+body{margin:0;font-family:Segoe UI,sans-serif;background:linear-gradient(135deg,#0f172a,#1e293b,#020617);color:#fff}
+.hero{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px}
+h1{font-size:4rem;color:#fbbf24}
+.btn{padding:15px 30px;border:none;border-radius:30px;background:#fbbf24;font-weight:bold;cursor:pointer}
+.letter{display:none;max-width:900px;margin:20px auto;padding:35px;background:rgba(255,255,255,.08);border-radius:20px;line-height:1.9}
+.award{border:2px solid #fbbf24;padding:20px;border-radius:15px;text-align:center;margin-top:20px}
+.quote{text-align:center;color:#fbbf24;font-style:italic;margin-top:20px}
+.signature{text-align:right;color:#fbbf24;margin-top:25px;font-weight:bold}
+</style>
+</head>
+<body>
+<div class="hero">
+<h1>❤️ Happy Father's Day ❤️</h1>
+<p id="typing"></p>
+<button class="btn" onclick="document.getElementById('letter').style.display='block';document.getElementById('letter').scrollIntoView({behavior:'smooth'});">💌 Open Special Letter</button>
+</div>
+
+<div class="letter" id="letter">
+<h2>Happy Father's Day, Dad! ❤️</h2>
+<p><b>Dear Father,</b></p>
+
+<p>On this special day, I want to thank you for everything you do for our family. Your love, sacrifices, guidance, and hard work have shaped my life in countless ways. You are not only my father but also my teacher, protector, and biggest source of inspiration.</p>
+
+<p>Whenever I face difficulties, your words give me strength. Whenever I feel uncertain, your support gives me confidence. You work tirelessly to provide us with a better life, often putting our happiness before your own. Your kindness, patience, and dedication are qualities that I admire deeply.</p>
+
+<p>Thank you for teaching me important values such as honesty, respect, responsibility, and perseverance. The lessons I learn from you every day help me become a better person. I am truly grateful for every sacrifice you have made and continue to make for our family.</p>
+
+<p>No words can fully express how much you mean to me. I am blessed to have a father like you, and I am proud to be your child. May you always be healthy, happy, and successful in everything you do.</p>
+
+<p>Wishing you a very Happy Father's Day filled with love, joy, and countless smiles.</p>
+
+<div class="award">
+<h3>🏆 BEST DAD AWARD 🏆</h3>
+<p>Presented with love and gratitude to the world's most caring, hardworking, supportive and inspiring father.</p>
+</div>
+
+<div class="quote">"Behind every strong child is a father whose love never fades."</div>
+
+<div class="signature">
+With lots of love and respect,<br><br>
+Yours lovingly,<br>
+❤️ Aksaa Jaan ❤️
+</div>
+</div>
+
+<script>
+const text="Every superhero doesn't wear a cape. Some are simply called Dad.";
+let i=0;
+(function type(){
+ if(i<text.length){document.getElementById('typing').innerHTML+=text.charAt(i++);setTimeout(type,50);}
+})();
+</script>
+</body>
+</html>
